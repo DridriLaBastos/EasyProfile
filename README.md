@@ -16,6 +16,7 @@ Start();
 //Code to profile
 Stop();
 ```
+**If you encouter a bug or want to request a feature, please open an issue in the githuh repo at https://github.com/DridriLaBastos/EasyProfile**
 
 The profiler also comes with two modes: a *dynamic* mode and a *static* mode.
 ## Dynamic mode
@@ -83,6 +84,12 @@ using (EasyProfile.Profiler.DynamicProfile("Process Audio Data"))
 
 Will display:
 
-![Dynamic Exemple](./doc/img/DynamicExemple.png)
+![Dynamic Exemple](https://github.com/DridriLaBastos/EasyProfile/blob/master/doc/img/DynamicExemple.png?raw=)
+
+The format of the display is as follow:
+```
+<section name>: <call number> in <total ms time>ms (<time / call>)
+    <section name>: <call number> in <total ms time>ms (<time / call> - <% of parent section if any>)
+```
 
 **Documentation is still in progress**
