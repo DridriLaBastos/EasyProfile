@@ -11,14 +11,23 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <Description>EasyProfile is a C# profiler available for all platforms that support .NET Standard 2.0. It provides you with a simple way to visualize performance statistics</Description>
     <Authors>Adrien COURNAND</Authors>
-    <tags>Profiler Performance</tags>
     <Company />
+    <PackageLicenseUrl>https://raw.githubusercontent.com/DridriLaBastos/EasyProfile/master/LICENSE.md</PackageLicenseUrl>
+    <Owners>Adrien COURNAND</Owners>
+    <PackageReleaseNotes>Updating package metadatas</PackageReleaseNotes>
+    <PackageTags>Profiler Performance</PackageTags>
+    <Title>EasyProfile</Title>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="README.md" />
     <None Remove="README.md" />
@@ -26,5 +35,11 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.5-dev.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
