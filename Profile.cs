@@ -4,9 +4,8 @@ namespace EasyProfile
     public class Profiler
     {
         static private DateTime last = DateTime.Now;
-        private static int dynamicSecondTimeInterval = 1;
 
-        static int DynamicTimeInterval { get => dynamicSecondTimeInterval; set => dynamicSecondTimeInterval = value; }
+        public static int DynamicTimeInterval { get; set; } = 1;
 
         public static ProfilerNode Profile(in string profileContextName)
         {
@@ -16,7 +15,7 @@ namespace EasyProfile
         public static ProfilerNode DynamicProfile(in string profileContextName)
         {
             DateTime now = DateTime.Now;
-            if ((now - last).Seconds >= dynamicSecondTimeInterval)
+            if ((now - last).Seconds >= DynamicTimeInterval)
             {
                 last = now;
                 ProfilerContext.staticContext.PrintResults();
@@ -31,7 +30,7 @@ namespace EasyProfile
         public static void DynamicStart(in string profilerContextName)
         {
             DateTime now = DateTime.Now;
-            if ((now - last).Seconds >= dynamicSecondTimeInterval)
+            if ((now - last).Seconds >= DynamicTimeInterval)
             {
                 last = now;
                 ProfilerContext.staticContext.PrintResults();
