@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,11 +6,12 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/DridriLaBastos/EasyProfile</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DridriLaBastos/EasyProfile</RepositoryUrl>
-    <Copyright>GPLv3</Copyright>
+    <Copyright>Copyright © 2021 - COURNAND Adrien</Copyright>
     <Version>1.0.1</Version>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Description>EasyProfile is a C# profiler available for all platforms that support .NET Standard 2.0. It provides you with a simple way to visualize performance statistics</Description>
     <Authors>Adrien COURNAND</Authors>
+    <tags>Profiler Performance</tags>
     <Company />
   </PropertyGroup>
 
