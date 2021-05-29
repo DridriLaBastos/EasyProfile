@@ -84,7 +84,7 @@ using (EasyProfile.Profiler.DynamicProfile("Process Audio Data"))
 
 Will display:
 
-![Dynamic Exemple](https://github.com/DridriLaBastos/EasyProfile/blob/master/doc/img/DynamicExemple.png?raw=)
+![Dynamic Exemple](https://user-images.githubusercontent.com/19534959/120080529-ac789b00-c0b9-11eb-870b-ae1ffc8a690f.png)
 
 The format of the display is as follow:
 ```
