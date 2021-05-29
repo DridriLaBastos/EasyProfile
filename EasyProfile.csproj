@@ -2,11 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseFile>README.md</PackageLicenseFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/DridriLaBastos/EasyProfile</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DridriLaBastos/EasyProfile</RepositoryUrl>
     <Copyright>GPLv3</Copyright>
+    <Version>1.0.1</Version>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Description>EasyProfile is a C# profiler available for all platforms that support .NET Standard 2.0. It provides you with a simple way to visualize performance statistics</Description>
+    <Authors>Adrien COURNAND</Authors>
+    <Company />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -14,7 +19,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="README.md">
+    <None Remove="README.md" />
+    <None Remove="README.md" />
+    <None Include="LICENSE.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
